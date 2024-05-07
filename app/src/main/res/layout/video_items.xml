@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_marginTop="2dp"
+    android:layout_height="wrap_content">
+    
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:scaleType="fitXY"
+        android:id="@+id/thumbnail"/>
+    
+    <com.mikhaellopez.circularimageview.CircularImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitCenter"
+        android:layout_below="@+id/thumbnail"
+        android:layout_marginTop="3dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="5dp"
+        android:src="@mipmap/ic_launcher_round"
+        android:id="@+id/profileimage"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/thumbnail"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="5dp"
+        android:layout_toEndOf="@+id/profileimage"
+        android:ellipsize="end"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto_slab"
+        android:maxLines="2"
+        android:text="Sample Title"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+    
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/channelname"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="2dp"
+        android:text="Sample channel"
+        android:layout_toEndOf="@+id/profileimage"
+        android:layout_marginStart="5dp"
+        android:textSize="11sp"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/likes"
+        android:layout_below="@+id/title"
+        android:layout_marginTop="2dp"
+        android:text="500"
+        android:layout_toEndOf="@+id/channelname"
+        android:layout_marginStart="3dp"
+        android:layout_marginEnd="5dp"
+        android:textSize="11sp"/>
+
+
+</RelativeLayout>
